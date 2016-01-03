@@ -32,6 +32,6 @@ $.fn.pagination = function(options) {
       i++; current_link++;
     }
     if( settings.page != number_of_pages && number_of_pages != 0 )
-        navigation_html += settings.open_tag + '<a href="' + settings.uri + '?page=' + (number_of_pages+=1) + '&limit=' + settings.limit + '">' + settings.next_text + '</a>' + settings.close_tag;
+        navigation_html += settings.open_tag + '<a href="' + settings.uri + '?page=' + (number_of_pages) + '&limit=' + settings.limit + '">' + settings.next_text + '</a>' + settings.close_tag;
     $(this).html(navigation_html);
 };
