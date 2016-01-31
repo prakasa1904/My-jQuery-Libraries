@@ -7,7 +7,7 @@
 */
 $.fn.pagination = function(options) {
   var defaults = {
-    uri: 'http://www.domain.com/',
+    uri: 'http://terpusat.com/',
     total:0,
     limit: 10,
     page: 1,
@@ -22,7 +22,6 @@ $.fn.pagination = function(options) {
   var navigation_html = ''; var i = 0; var current_link = 1;
 
   var number_of_pages = Math.ceil(settings.total/settings.limit);
-  console.log(number_of_pages + ' == ' + settings.total + ' == ' + settings.limit);
   if( settings.page > 1 )
     navigation_html += settings.open_tag + '<a href="' + settings.uri + '?page=1&limit=' + settings.limit + '">' + settings.prev_text + '</a>' + settings.close_tag;
   if( number_of_pages > 1 ){
